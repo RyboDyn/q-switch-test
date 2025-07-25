@@ -17,7 +17,7 @@ process TEST {
   def queue = task.attempt > 1 && duration > "1 m" ? "TowerForge-h0Zh75iShsiH8j1ORCtol" : "TowerForge-3VWsppf8adM9spVAQC2nK-work"
   """
   echo ${queue}
-  sleep 90
+  sleep 10
   exit 255
   """
 }
